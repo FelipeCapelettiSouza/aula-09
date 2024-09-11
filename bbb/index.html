@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo do Começo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Título do Site</h1>
+            <p>Conteúdo da página.</p>
+            <button class="fab">
+                <span class="icon">+</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="drawer" id="drawer">
+        <button class="close-btn" onclick="closeDrawer()">×</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <button class="open-btn" onclick="openDrawer()">☰ Abrir Menu</button>
+        <h1>Conteúdo da Página</h1>
+        <p>Este é um exemplo básico de um Navigation Drawer.</p>
+
+        <section class="form-section">
+            <h2>Formulário Animado</h2>
+            <form class="animated-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h2>Formulário Responsivo</h2>
+            <form class="responsive-form">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    
+                    <label for="first-name">Nome:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Digite seu nome">
+                    
+                    <label for="last-name">Sobrenome:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Digite seu sobrenome">
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                    
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone">
+                    
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Exemplos de Listas</h2>
+            
+            <h3>Lista Ordenada (Upper Roman)</h3>
+            <ol font="upper-roman">
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+            
+            <h3>Lista Ordenada (Lower Alpha)</h3>
+            <ol font-family="lower-alpha">
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+            
+            <h3>Lista Desordenada (Circle)</h3>
+            <ul font-family="circle">
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ul>
+            
+            <h3>Lista Desordenada (Square)</h3>
+            <ul font-family="square">
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

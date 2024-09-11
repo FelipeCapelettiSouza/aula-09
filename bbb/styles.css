@@ -1,0 +1,211 @@
+/* Estilo básico para o corpo e conteúdo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F0F0F0; /* Cor de fundo clara */
+}
+
+header, .content, footer {
+    text-align: center;
+}
+
+/* Estilo do header */
+header {
+    background-color: #1E2A38; /* Azul escuro */
+    color: #FFFFFF; /* Texto branco */
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+}
+
+/* Estilo do Floating Action Button */
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    background-color: #4A90E2; /* Azul claro */
+    color: #FFFFFF; /* Texto branco */
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 24px;
+    transition: background-color 0.3s;
+}
+
+.fab:hover {
+    background-color: #357ABD; /* Azul escuro ao passar o mouse */
+}
+
+/* Estilo do Navigation Drawer */
+.drawer {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #1E2A38; /* Azul escuro */
+    color: #FFFFFF; /* Texto branco */
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.drawer a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFFFFF; /* Texto branco */
+    display: block;
+    transition: 0.3s;
+}
+
+.drawer a:hover {
+    background-color: #4A90E2; /* Azul claro ao passar o mouse */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: #FFFFFF; /* Texto branco */
+    cursor: pointer;
+}
+
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.drawer.show {
+    left: 0;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #b2d3dd; /* Fundo branco para a área de conteúdo */
+}
+
+/* Estilo dos formulários */
+.form-section {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.animated-form, .responsive-form {
+    background-color: #83bfe7; /* Fundo branco para os formulários */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.animated-form input, .animated-form textarea, .responsive-form input, .responsive-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.animated-form input:focus, .animated-form textarea:focus {
+    border-color: #080808; /* Azul claro */
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Sombra azul clara */
+}
+
+.animated-form button, .responsive-form button {
+    background-color: #0674f1; /* Azul claro */
+    color: #FFFFFF; /* Texto branco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.animated-form button:hover {
+    background-color: #0a78e6; /* Azul escuro */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.responsive-form fieldset {
+    border: 1px solid #080808;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.responsive-form legend {
+    font-weight: bold;
+    color: #1E2A38; /* Azul escuro */
+}
+
+footer {
+    background-color: #1E2A38; /* Azul escuro */
+    color: #FFFFFF; /* Texto branco */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+/* Estilo das listas ordenadas e desordenadas */
+
+/* Lista Ordenada (Upper Roman) */
+.upper-roman {
+    list-style-type: upper-roman; /* Números romanos maiúsculos */
+    padding-left: 20px; /* Espaçamento à esquerda */
+    margin-bottom: 20px; /* Espaçamento abaixo da lista */
+}
+
+.upper-roman li {
+    margin-bottom: 10px; /* Espaçamento entre itens */
+}
+
+/* Lista Ordenada (Lower Alpha) */
+.lower-alpha {
+    list-style-type: lower-alpha; /* Letras minúsculas */
+    padding-left: 20px; /* Espaçamento à esquerda */
+    margin-bottom: 20px; /* Espaçamento abaixo da lista */
+}
+
+.lower-alpha li {
+    margin-bottom: 10px; /* Espaçamento entre itens */
+}
+
+/* Lista Desordenada (Circle) */
+.circle {
+    list-style-type: circle; /* Marcadores em forma de círculo */
+    padding-left: 20px; /* Espaçamento à esquerda */
+    margin-bottom: 20px; /* Espaçamento abaixo da lista */
+}
+
+.circle li {
+    margin-bottom: 10px; /* Espaçamento entre itens */
+}
+
+/* Lista Desordenada (Square) */
+.square {
+    list-style-type: square; /* Marcadores em forma de quadrado */
+    padding-left: 20px; /* Espaçamento à esquerda */
+    margin-bottom: 20px; /* Espaçamento abaixo da lista */
+}
+
+.square li {
+    margin-bottom: 10px; /* Espaçamento entre itens */
+}
